@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Countries from "./components/Countries";
 
-const url = "https://restcountries.com/v3.1/all";
+const url = "https://restcountries.com/v2/all";
 
 const App = () => {
 
@@ -26,8 +26,8 @@ const App = () => {
     }
   }
 
-useEffect(() => {
- fetchData(url)
+useEffect( () => {
+  fetchData(url)
 }, [])
 
 const handleRemoveCountry=(name)=>{
